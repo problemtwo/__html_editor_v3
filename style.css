@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+*{
+ margin:0;
+ padding:0;
+ border:none;
+ outline:none;
+ overflow:hidden;
+ font-family:'Ubuntu Mono';
+}
+html{
+ --fg-color:#6a6;
+ --bg-color:#fff;
+}
+html,body{
+ width:100%;
+ height:100%;
+}
+textarea::selection,button::selection{
+ background:var(--fg-color);
+ color:var(--bg-color);
+}
+.separator{
+ background:var(--fg-color);
+ width:100%;
+ height:1%;
+}
+#top{
+ width:100%;
+ height:89%;
+}
+#vertical-separator{
+ float:left;
+ background:var(--fg-color);
+ width:1%;
+ height:100%;
+}
+.sect{
+ float:left;
+ width:49.5%;
+ height:100%;
+}
+#log{
+ width:100%;
+ height:10%;
+ color:var(--fg-color);
+ font-size:1.5em;
+}
+#output{
+ width:100%;
+ height:90%;
+}
+#html,#js{
+ background:var(--bg-color);
+ color:var(--fg-color);
+ width:100%;
+ height:49.5%;
+ font-size:1.5em;
+ resize:none;
+}
+#options{
+ width:100%;
+ height:10%;
+ background:var(--bg-color);
+}
+#options>textarea,#options>button{
+ float:left;
+ width:9.75%;
+ border-left:solid 0.25vw var(--fg-color);
+ border-right:solid 0.25vw var(--fg-color);
+ border-top:none;
+ height:100%;
+ font-size:2em;
+ background:var(--bg-color);
+ color:var(--fg-color);
+}

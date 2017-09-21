@@ -53,7 +53,6 @@ window.onload = function(){
   doc.open();
   doc.write(id('html').value);
   doc.close();
-  id('output').innerHTML = id('html').value;
   try{
    eval(id('js').value);
   }catch(ex){

@@ -49,10 +49,7 @@ window.onload = function(){
  };
  
  id('run').onclick = function(){
-  const doc = id('output').contentWindow.document;
-  doc.open();
-  doc.write(id('html').value);
-  doc.close();
+  id('output').innerHTML = id('html').value;
   try{
    eval(id('js').value);
   }catch(ex){
